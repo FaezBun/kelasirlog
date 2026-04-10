@@ -3,6 +3,7 @@
 # 🚀 Fast Log Analyzer: Using Parallel Computing to Detect Security Threats
 
 **Course Code: ITT440: Network Programming**
+
 **Lecturer :  Shahadan Bin Saad**
 
 # 🛡️1. Mission Objective
@@ -13,9 +14,13 @@ The Fast Log Analyzer is a high-performance engine that utilizes Parallel Comput
 
 # 💻 2. Hardware & Environment
 To hit the 15-million-line milestone, the engine is optimized for the following setup:
+
 Processor: Quad-Core / Octa-Core CPU
+
 Memory: 8GB RAM minimum (To handle the heavy 15M log buffer).
+
 OS: Linux Environment (Ubuntu 22.04+ recommended).
+
 Runtime: Python 3.8+ with matplotlib for analytics and tqdm for real-time progress.
 
 
@@ -24,31 +29,46 @@ Runtime: Python 3.8+ with matplotlib for analytics and tqdm for real-time progre
 
 
 ###  Create a new project folder
+
+```bash
 mkdir ITT440_LogAnalyzer
-cd ITT440_LogAnalyzer
+ cd ITT440_LogAnalyzer
+```
 
 ### Initialize a virtual environment in the 'venv' directory
+
+```bash
 python3 -m venv venv
+```
 
 ### Standard activation command for Linux/macOS
+
+```bash
 source venv/bin/activate
+```
+
 ### Install tqdm (Real-time progress bars)
+
+```bash
 pip install tqdm
+```
 
 ### Install Matplotlib (Automatic performance graph generation)
-pip install matplotlib
 
+```bash
+pip install matplotlib
+```
 
 ## B. Engagement Protocol
 To launch the analysis, execute the main engine:
 
 
 ### Activate Venv
+
+```bash
 source venv/bin/activate
-
 python3 analyzer.py
-
-
+```
 
 # 📊 4. Battlefield Analytics (Sample Output)
 
@@ -66,7 +86,7 @@ When the analyzer completes its scan, it generates a comprehensive Forensic Brea
 | **Total Critical Threats** | **1,200,000**  |
 
 
-Performance Benchmark
+### Performance Benchmark
 
 We pitted the Sequential method against our Parallel engine on the T490s:
 
@@ -77,8 +97,10 @@ Parallel (8 Cores): 10.82 Seconds
 
 Performance Gain: 🚀 3.26x Faster
 
+!(15mil.png)
+
 # 🧠 5. How It Works (The Logic)
-The engine doesn't just work harder; it works smarter by using a MapReduce Pattern:
+The engine doesn't just work harder; it works smarter by using a MapReduce Pattern.
 
 
 Partition (Map): The 15 million lines are sliced into 8 equal chunks.
@@ -86,10 +108,6 @@ Partition (Map): The 15 million lines are sliced into 8 equal chunks.
 Analyze: Each CPU core receives a chunk and runs high-speed Regex matching simultaneously.
 
 Synthesize (Reduce): The engine pulls the results from all cores together to produce the final forensic tally.
-
-# 📜 6. Core Source Code Architecture
-
-
 
 # 🏁 7. Final Verdict
 The Fast Log Analyzer proves that parallel computing is the gold standard for modern forensics. By cutting analysis time by over 70%, we ensure that network administrators can respond to breaches in real-time, rather than hours after the damage is done.
