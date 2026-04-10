@@ -67,8 +67,14 @@ To launch the analysis, execute the main engine:
 
 ```bash
 source venv/bin/activate
+```
+
+### Run Program 
+
+```bash
 python3 analyzer.py
 ```
+
 
 # 📊 4. Battlefield Analytics (Sample Output)
 
@@ -102,7 +108,7 @@ Performance Gain: 🚀 3.26x Faster
 ![15mil](15mil.png)
 
 
-## 100K Lines Of Log
+## B.100K Lines Of Log
 
 
 | Security Event             | Detection Count |
@@ -122,11 +128,11 @@ Performance Gain: 🚀 3.26x Faster
 We pitted the Sequential method against our Parallel engine on the T490s:
 
 
-Sequential (1 Core): 0.16 Seconds
+Sequential (1 Core): 0.19 Seconds
 
 Parallel (8 Cores): 0.07 Seconds
 
-Performance Gain: 🚀 2.48x Faster
+Performance Gain: 🚀 2.71x Faster
 
 ![100k](100k.png)
 
@@ -144,7 +150,9 @@ Analyze: Each CPU core receives a chunk and runs high-speed Regex matching simul
 Synthesize (Reduce): The engine pulls the results from all cores together to produce the final forensic tally.
 
 # 🏁 7. Final Verdict
-The Fast Log Analyzer proves that parallel computing is the gold standard for modern forensics. By cutting analysis time by over 70%, we ensure that network administrators can respond to breaches in real-time, rather than hours after the damage is done.
+The Fast Log Analyzer proves that parallel computing is the gold standard for modern forensics. 
+
+By cutting analysis time by over 70%, we ensure that network administrators can respond to breaches in real-time, rather than hours after the damage is done.
 
 
 # Status: Mission Accomplished. System Optimized. 🚀 
