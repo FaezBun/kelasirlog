@@ -86,7 +86,7 @@ When the analyzer completes its scan, it generates a comprehensive Forensic Brea
 | **Total Critical Threats** | **1,200,000**  |
 
 
-![15mil](15mil2.png)
+![15mil](15milss.png)
 
 ### Performance Benchmark
 
@@ -115,7 +115,7 @@ Performance Gain: 🚀 3.26x Faster
 | **Total Critical Threats** | **18 , 272**   |
 
 
-![100K](100k2.png)
+![100K](100kss.png)
 
 ### Performance Benchmark
 
