@@ -97,7 +97,7 @@ Parallel (8 Cores): 10.82 Seconds
 
 Performance Gain: 🚀 3.26x Faster
 
-!(15mil.png)
+![15mil](15mil.png)
 
 # 🧠 5. How It Works (The Logic)
 The engine doesn't just work harder; it works smarter by using a MapReduce Pattern.
