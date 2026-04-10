@@ -72,7 +72,7 @@ python3 analyzer.py
 
 # 📊 4. Battlefield Analytics (Sample Output)
 
-
+## A.15 Million Lines of Log
 When the analyzer completes its scan, it generates a comprehensive Forensic Breakdown. Here is what a typical high-stress test looks like:
 
 
@@ -86,6 +86,8 @@ When the analyzer completes its scan, it generates a comprehensive Forensic Brea
 | **Total Critical Threats** | **1,200,000**  |
 
 
+![15mil](15mil2.png)
+
 ### Performance Benchmark
 
 We pitted the Sequential method against our Parallel engine on the T490s:
@@ -98,6 +100,38 @@ Parallel (8 Cores): 10.82 Seconds
 Performance Gain: 🚀 3.26x Faster
 
 ![15mil](15mil.png)
+
+
+## 100K Lines Of Log
+
+
+| Security Event             | Detection Count |
+|----------------------------|----------------|
+| SQL_INJECTION_DETECTED     | 4 , 568 cases  |
+| BRUTE_FORCE_ATTEMPT        | 4 , 568 cases  |
+| XSS_ATTACK_DETECTED        | 4 , 568 cases  |
+| PATH_TRAVERSAL_ATTACK      | 2 , 284 cases  |
+| UNAUTHORIZED_ADMIN_ACCESS  | 2 , 284 cases  |
+| **Total Critical Threats** | **18 , 272**   |
+
+
+![100K](100k2.png)
+
+### Performance Benchmark
+
+We pitted the Sequential method against our Parallel engine on the T490s:
+
+
+Sequential (1 Core): 0.16 Seconds
+
+Parallel (8 Cores): 0.07 Seconds
+
+Performance Gain: 🚀 2.48x Faster
+
+![100k](100k.png)
+
+
+
 
 # 🧠 5. How It Works (The Logic)
 The engine doesn't just work harder; it works smarter by using a MapReduce Pattern.
