@@ -13,16 +13,18 @@ The Fast Log Analyzer is a high-performance engine that utilizes Parallel Comput
 
 
 # 💻 2. Hardware & Environment
-To hit the 15-million-line milestone, the engine is optimized for the following setup:
 
-Processor: Quad-Core / Octa-Core CPU
+1. Processor: Quad-Core / Octa-Core CPU
 
-Memory: 8GB RAM minimum (To handle the heavy 15M log buffer).
+2. Memory: 8GB RAM minimum 
 
-OS: Linux Environment (Ubuntu 22.04+ recommended).
+3. OS: Linux Environment (Ubuntu 22.04+ recommended).
 
-Runtime: Python 3.8+ with matplotlib for analytics and tqdm for real-time progress.
+4. Runtime: Python 3.8+ with matplotlib for analytics and tqdm for real-time progress.
 
+# Disclaimer 
+
+Please note that the **15,000,000 line log file** (`15mil_server_forensic.log`) is **not included** in this GitHub repository.
 
 # 🛠️ 3. Deployment Guide
 ## A. System Ignition
@@ -59,7 +61,7 @@ pip install tqdm
 pip install matplotlib
 ```
 
-## B. Engagement Protocol
+## B.  Engagement Protocol
 To launch the analysis, execute the main engine:
 
 
@@ -78,18 +80,18 @@ python3 analyzer.py
 
 # 📊 4. Battlefield Analytics (Sample Output)
 
-## A.15 Million Lines of Log
+## A. 15 Million Lines of Log
 When the analyzer completes its scan, it generates a comprehensive Forensic Breakdown. Here is what a typical high-stress test looks like:
 
 
 | Security Event             | Detection Count |
 |----------------------------|----------------|
-| SQL_INJECTION_DETECTED     | 240,115 cases  |
-| BRUTE_FORCE_ATTEMPT        | 239,780 cases  |
-| XSS_ATTACK_DETECTED        | 240,550 cases  |
-| PATH_TRAVERSAL_ATTACK      | 239,910 cases  |
-| UNAUTHORIZED_ADMIN_ACCESS  | 239,645 cases  |
-| **Total Critical Threats** | **1,200,000**  |
+| SQL_INJECTION_DETECTED     | 256,278 cases  |
+| BRUTE_FORCE_ATTEMPT        | 254,861 cases  |
+| XSS_ATTACK_DETECTED        | 254,861 cases  |
+| PATH_TRAVERSAL_ATTACK      | 172,471 cases  |
+| UNAUTHORIZED_ADMIN_ACCESS  | 172,471 cases  |
+| **Total Critical Threats** | **1,110,942**  |
 
 
 ![15mil](real15milss.png)
@@ -99,11 +101,11 @@ When the analyzer completes its scan, it generates a comprehensive Forensic Brea
 We pitted the Sequential method against our Parallel engine on the T490s:
 
 
-Sequential (1 Core): 35.30 Seconds
+1. Sequential (1 Core): 36.14 Seconds
 
-Parallel (8 Cores): 10.82 Seconds
+2. Parallel (8 Cores): 11.34 Seconds
 
-Performance Gain: 🚀 3.26x Faster
+3. Performance Gain: 🚀 3.19x Faster
 
 ![15mil](real15mil.png)
 
@@ -111,14 +113,14 @@ Performance Gain: 🚀 3.26x Faster
 ## B.100K Lines Of Log
 
 
-| Security Event             | Detection Count |
-|----------------------------|----------------|
-| SQL_INJECTION_DETECTED     | 4 , 568 cases  |
-| BRUTE_FORCE_ATTEMPT        | 4 , 568 cases  |
-| XSS_ATTACK_DETECTED        | 4 , 568 cases  |
-| PATH_TRAVERSAL_ATTACK      | 2 , 284 cases  |
-| UNAUTHORIZED_ADMIN_ACCESS  | 2 , 284 cases  |
-| **Total Critical Threats** | **18 , 272**   |
+| Security Event          | Detection Count |
+|-------------------------|-----------------|
+| SQL_INJECTION_DETECTED     | 4 568 cases  |
+| BRUTE_FORCE_ATTEMPT        | 4,568 cases  |
+| XSS_ATTACK_DETECTED        | 4,568 cases  |
+| PATH_TRAVERSAL_ATTACK      | 2,284 cases  |
+| UNAUTHORIZED_ADMIN_ACCESS  | 2,284 cases  |
+| **Total Critical Threats** | **18,272**   |
 
 
 ![100K](real100kss.png)
@@ -128,11 +130,11 @@ Performance Gain: 🚀 3.26x Faster
 We pitted the Sequential method against our Parallel engine on the T490s:
 
 
-Sequential (1 Core): 0.19 Seconds
+1. Sequential (1 Core): 0.30 Seconds
 
-Parallel (8 Cores): 0.07 Seconds
+2. Parallel (8 Cores): 0.11 Seconds
 
-Performance Gain: 🚀 2.71x Faster
+3. Performance Gain: 🚀 2.58x Faster
 
 ![100k](real100k.png)
 
@@ -143,16 +145,16 @@ Performance Gain: 🚀 2.71x Faster
 The engine doesn't just work harder; it works smarter by using a MapReduce Pattern.
 
 
-Partition (Map): The 15 million lines are sliced into 8 equal chunks.
+1. Partition (Map): The 15 million lines are sliced into 8 equal chunks.
 
-Analyze: Each CPU core receives a chunk and runs high-speed Regex matching simultaneously.
+2. Analyze: Each CPU core receives a chunk and runs high-speed Regex matching simultaneously.
 
-Synthesize (Reduce): The engine pulls the results from all cores together to produce the final forensic tally.
+3. Synthesize (Reduce): The engine pulls the results from all cores together to produce the final forensic tally.
 
 # 🏁 7. Final Verdict
-The Fast Log Analyzer proves that parallel computing is the gold standard for modern forensics. 
+The Fast Log Analyzer proves that **parallel computing** is the gold standard for modern forensics. 
 
-By cutting analysis time by over 70%, we ensure that network administrators can respond to breaches in real-time, rather than hours after the damage is done.
+By cutting analysis time by over 70%, we ensure that network administrators can respond to breaches in real-time rather than hours after the damage is done.
 
 
 # Status: Mission Accomplished. System Optimized. 🚀 
