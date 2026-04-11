@@ -9,8 +9,8 @@ from tqdm import tqdm
 from collections import Counter
 
 # --- CONFIGURATION ---
-LOG_FILE = "15milserver_forensic.log"
-TOTAL_LINES = 15_000_000  # 1 Juta baris
+LOG_FILE = "100kserver_forensic.log"
+TOTAL_LINES = 100_000  # 1 Juta baris
 NUM_CORES = multiprocessing.cpu_count()
 
 # --- 1. DATA GENERATOR (RANDOMIZED ATTACKS) ---

@@ -92,7 +92,7 @@ When the analyzer completes its scan, it generates a comprehensive Forensic Brea
 | **Total Critical Threats** | **1,200,000**  |
 
 
-![15mil](15milss.png)
+![15mil](real15milss.png)
 
 ### Performance Benchmark
 
@@ -105,7 +105,7 @@ Parallel (8 Cores): 10.82 Seconds
 
 Performance Gain: 🚀 3.26x Faster
 
-![15mil](15mil.png)
+![15mil](real15mil.png)
 
 
 ## B.100K Lines Of Log
@@ -121,7 +121,7 @@ Performance Gain: 🚀 3.26x Faster
 | **Total Critical Threats** | **18 , 272**   |
 
 
-![100K](100kss.png)
+![100K](real100kss.png)
 
 ### Performance Benchmark
 
@@ -134,7 +134,7 @@ Parallel (8 Cores): 0.07 Seconds
 
 Performance Gain: 🚀 2.71x Faster
 
-![100k](100k.png)
+![100k](real100k.png)
 
 
 
