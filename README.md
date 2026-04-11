@@ -78,7 +78,7 @@ python3 analyzer.py
 ```
 
 
-# 📊 4. Battlefield Analytics (Sample Output)
+# 📊 4. Battlefield Analytics 
 
 ## A. 15 Million Lines of Log
 When the analyzer completes its scan, it generates a comprehensive Forensic Breakdown. Here is what a typical high-stress test looks like:
