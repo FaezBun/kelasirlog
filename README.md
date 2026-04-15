@@ -98,14 +98,14 @@ When the analyzer completes its scan, it generates a comprehensive Forensic Brea
 
 ### Performance Benchmark
 
-We pitted the Sequential method against our Parallel engine on the T490s:
 
-
-1. Sequential (1 Core): 36.14 Seconds
+1. Concurrent : 2.8792 Seconds
 
 2. Parallel (8 Cores): 11.34 Seconds
 
-3. Performance Gain: 🚀 3.19x Faster
+3. Sequential (1 Core): 36.14 Seconds
+
+4. Performance Gain: 🚀 3.19x Faster
 
 ![15mil](real15mil.png)
 
@@ -127,14 +127,14 @@ We pitted the Sequential method against our Parallel engine on the T490s:
 
 ### Performance Benchmark
 
-We pitted the Sequential method against our Parallel engine on the T490s:
 
-
-1. Sequential (1 Core): 0.30 Seconds
+1. Concurrent : 0.0306 Seconds
 
 2. Parallel (8 Cores): 0.11 Seconds
 
-3. Performance Gain: 🚀 2.58x Faster
+3. Sequential (1 Core): 0.30 Seconds
+
+4. Performance Gain: 🚀 2.58x Faster
 
 ![100k](real100k.png)
 
