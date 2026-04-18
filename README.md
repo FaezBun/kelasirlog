@@ -6,6 +6,8 @@
 
 **Lecturer :  Shahadan Bin Saad**
 
+**Youtube Link : https://youtu.be/6e2JYMypeDA?si=Sz6S3xXJdR5DSBXB**
+
 # 🛡️1. Mission Objective
 In modern cybersecurity, Speed = Survival. Processing 15 million lines of logs using traditional, single-core methods is a bottleneck that leaves systems vulnerable.
 
